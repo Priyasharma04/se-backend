@@ -21,7 +21,7 @@ app.add_middleware(
 # ---------------------------------
 # 🔗 Ngrok Endpoint (Kaggle API URL)
 # ---------------------------------
-NGROK_URL = "https://beverly-unfriable-amaya.ngrok-free.dev"  # ⬅️ replace with your Kaggle ngrok link
+NGROK_URL = "https://stalked-danette-pulpless.ngrok-free.dev"  # ⬅️ replace with your Kaggle ngrok link
 
 # ---------------------------------
 # Main Endpoint
