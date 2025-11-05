@@ -1,4 +1,5 @@
 accelerate
+python-multipart
 requests
 gunicorn
 flask-cors
