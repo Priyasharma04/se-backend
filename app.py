@@ -12,7 +12,7 @@ app = FastAPI(title="ReviewAdvisor Backend")
 # ---------------------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://frontend-one-iota-23.vercel.app/"],  # or restrict to your Vercel domain
+    allow_origins=["*"],  # or restrict to your Vercel domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
