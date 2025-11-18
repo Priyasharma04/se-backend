@@ -4,7 +4,7 @@ import requests, tempfile
 app = FastAPI(title="ReviewAdvisor Backend")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://frontend-one-iota-23.vercel.app"], 
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
