@@ -15,18 +15,6 @@
       <!-- Upload PDF -->
       <label for="file">Upload PDF:</label>
       <input type="file" name="file" id="file" required><br><br>
-
-      <!-- Deep Search Checkbox -->
-      <label>
-        <input type="checkbox" name="deep_search" id="deep_search" onclick="toggleTopicInput()"> Enable Deep Search
-      </label><br><br>
-
-      <!-- Topic Input Box (hidden until checked) -->
-      <div id="topic_box" style="display:none; margin-bottom: 15px;">
-        <label for="topic">Enter Topic:</label>
-        <input type="text" name="topic" id="topic" placeholder="e.g. medical imaging AI">
-      </div>
-
       <!-- Submit Button -->
       <button type="submit">Run Review</button>
     </form>
@@ -55,7 +43,5 @@
     <div class="spinner"></div>
     <p id="loading-text">Processing your paper…</p>
   </div>
-
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
