@@ -57,7 +57,12 @@ async def review(request: Request, file: UploadFile = File(...)):
         if response.status_code != 200:
             return {"error": f"Model API failed: {response.text}"}
 
-        return response.json()
+        model_output = response.json()
+
+        if "response" in model_output:
+            return {"review": model_output["response"]}
+
+        return {"error": "Unexpected response from model API."}
 
     except Exception as e:
         return {"error": str(e)}
