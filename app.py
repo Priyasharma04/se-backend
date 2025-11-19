@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-NGROK_URL = "https://nonfinancially-premillennial-man.ngrok-free.dev"
+NGROK_URL = "https://shrubby-glenda-sacramentally.ngrok-free.dev"
 
 RATE_LIMIT = 5
 WINDOW_SIZE = 60
