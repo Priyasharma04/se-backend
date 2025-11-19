@@ -9,7 +9,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-NGROK_URL = "https://inventional-yvette-drily.ngrok-free.dev"  
+NGROK_URL = "https://unexecutable-teresia-dilutely.ngrok-free.dev"  
 @app.post("/api/review")
 async def review(file: UploadFile = File(...)):
     try:
